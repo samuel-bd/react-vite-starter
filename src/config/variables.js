@@ -18,6 +18,10 @@ const config = {
     fontSizeSmall: '13px',
     fontSizeLarge: '18px',
     fontSizeXL: '22px',
+    paddingDefault: '8px',
+    paddingSmall: '5px',
+    paddingLarge: '16px',
+    paddingXL: '24px',
 };
 
 export const variables = {
@@ -36,6 +40,14 @@ export const variables = {
         blue100: `${config.blue100Color}`,
         blue120: `${config.blue120Color}`,
     },
+    backgroundColors: {
+        backgroundColorPrimary: `${config.blue80Color}`,
+        backgroundColorSecondary: `${config.blue100Color}`,
+    },
+    textColors: {
+        colorTextPrimary: `${config.whiteColor}`,
+        colorTextSecondary: `${config.easyGreyColor}`,
+    },
     font: {
         fontSize: {
             default: `${config.fontSizeDefault}`,
@@ -53,5 +65,11 @@ export const variables = {
             body: `${config.fontFamilyBody}`,
             title: `${config.fontFamilyTitle}`,
         },
+    },
+    padding: {
+        default: `${config.paddingDefault}`,
+        sm: `${config.paddingSmall}`,
+        lg: `${config.paddingLarge}`,
+        xl: `${config.paddingXL}`,
     },
 };
