@@ -18,7 +18,7 @@ const config = {
     fontSizeSmall: '13px',
     fontSizeLarge: '18px',
     fontSizeXL: '22px',
-}
+};
 
 export const variables = {
     colors: {
@@ -54,4 +54,4 @@ export const variables = {
             title: `${config.fontFamilyTitle}`,
         },
     },
-}
+};
