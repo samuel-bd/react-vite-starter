@@ -1,5 +1,6 @@
-/** @jsx jsx */
-import { Global, css, jsx } from '@emotion/react';
+/** @jsxImportSource @emotion/react */
+import { Global, css } from '@emotion/react';
+import React from 'react';
 import 'css-maid';
 import { variables } from './config/variables';
 import mq from './config/breakpoints';

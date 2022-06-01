@@ -7,7 +7,7 @@ const config = {
     whiteColor: '#FFFFFF',
     pink100Color: '#F6816D',
     gradientPinkColor: 'linear-gradient(270deg, #F67668 0%, #F79576 100%)',
-    pink120Color: `linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), ${config.pink100Color}`,
+    pink120Color: `linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), #F6816D`,
     pink80Color: '#FDAF98',
     blue120Color: '#115B60',
     blue100Color: '#29BAAD',
