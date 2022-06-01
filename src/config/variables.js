@@ -7,7 +7,7 @@ const config = {
     whiteColor: '#FFFFFF',
     pink100Color: '#F6816D',
     gradientPinkColor: 'linear-gradient(270deg, #F67668 0%, #F79576 100%)',
-    pink120Color: `linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), ${config.pink100Color}`,
+    pink120Color: `linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), #F6816D`,
     pink80Color: '#FDAF98',
     blue120Color: '#115B60',
     blue100Color: '#29BAAD',
@@ -18,7 +18,11 @@ const config = {
     fontSizeSmall: '13px',
     fontSizeLarge: '18px',
     fontSizeXL: '22px',
-}
+    paddingDefault: '8px',
+    paddingSmall: '5px',
+    paddingLarge: '16px',
+    paddingXL: '24px',
+};
 
 export const variables = {
     colors: {
@@ -35,6 +39,14 @@ export const variables = {
         blue80: `${config.blue80Color}`,
         blue100: `${config.blue100Color}`,
         blue120: `${config.blue120Color}`,
+    },
+    backgroundColors: {
+        backgroundColorPrimary: `${config.blue80Color}`,
+        backgroundColorSecondary: `${config.blue100Color}`,
+    },
+    textColors: {
+        colorTextPrimary: `${config.whiteColor}`,
+        colorTextSecondary: `${config.easyGreyColor}`,
     },
     font: {
         fontSize: {
@@ -54,4 +66,10 @@ export const variables = {
             title: `${config.fontFamilyTitle}`,
         },
     },
-}
+    padding: {
+        default: `${config.paddingDefault}`,
+        sm: `${config.paddingSmall}`,
+        lg: `${config.paddingLarge}`,
+        xl: `${config.paddingXL}`,
+    },
+};

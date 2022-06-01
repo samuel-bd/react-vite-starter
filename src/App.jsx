@@ -1,14 +1,20 @@
-/** @jsx jsx */
-import { Global, css, jsx } from '@emotion/react'
-import 'css-maid'
-import { variables } from './config/variables'
-import mq from './config/breakpoints'
+/** @jsxImportSource @emotion/react */
+import { Global, css } from '@emotion/react';
+import React from 'react';
+import 'css-maid';
+import { variables } from './config/variables';
+import mq from './config/breakpoints';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Landing from './pages/Landing';
 
 const App = () => {
     return (
-        <div>
-            <h1>React/Vite Project Starter</h1>
-            <p>Created by Samuel Yusuf</p>
+        <div className="app">
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Landing />}></Route>
+                </Routes>
+            </Router>
             <Global
                 styles={css`
                     @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;600&display=swap');
@@ -22,25 +28,25 @@ const App = () => {
 
                     ${mq[0]} {
                         body {
-                            color: ${variables.colors.easyGrey};
+                            background: ${variables.colors.gradientPink};
                         }
                     }
 
                     ${mq[1]} {
                         body {
-                            color: ${variables.colors.middleGrey};
+                            background: ${variables.colors.pink100};
                         }
                     }
 
                     ${mq[2]} {
                         body {
-                            color: ${variables.colors.lightGrey};
+                            background: ${variables.colors.darkBlue};
                         }
                     }
                 `}
             />
         </div>
-    )
-}
+    );
+};
 
-export default App
+export default App;
