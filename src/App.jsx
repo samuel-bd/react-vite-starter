@@ -3,14 +3,17 @@ import { Global, css, jsx } from '@emotion/react';
 import 'css-maid';
 import { variables } from './config/variables';
 import mq from './config/breakpoints';
-import { Counter } from './components/Counter/Counter';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Landing from './pages/Landing';
 
 const App = () => {
     return (
-        <div>
-            <h1>React/Vite Project Starter</h1>
-            <p>Created by Samuel Yusuf</p>
-            <Counter />
+        <div className="app">
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Landing />}></Route>
+                </Routes>
+            </Router>
             <Global
                 styles={css`
                     @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;600&display=swap');
