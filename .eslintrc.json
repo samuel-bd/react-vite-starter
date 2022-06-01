@@ -22,7 +22,7 @@
             "error",
             {
                 "endOfLine": "auto",
-                "semi": false
+                "semi": true
             }
         ]
     },
